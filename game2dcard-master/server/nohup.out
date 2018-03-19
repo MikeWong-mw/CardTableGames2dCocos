@@ -1,0 +1,65 @@
+account server is listening on 9000
+dealer api is listening on localhost:12581
+game server is listening on localhost:9003
+client service is listening on port 9001
+room service is listening on localhost:9002
+game server is listening on 10000
+game server registered.
+	id:192.168.1.68:10000
+	addr:127.0.0.1
+	http port:9003
+	socket clientport:10000
+192.168.1.68:10000
+39de3ef2a15aa649fabb9df66f93f3cf
+invalid parameters
+account server is listening on 9000
+dealer api is listening on localhost:12581
+client service is listening on port 9001
+room service is listening on localhost:9002
+events.js:141
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::9000
+    at Object.exports._errnoException (util.js:911:11)
+    at exports._exceptionWithHostPort (util.js:934:20)
+    at Server._listen2 (net.js:1248:14)
+    at listen (net.js:1284:10)
+    at Server.listen (net.js:1380:5)
+    at EventEmitter.listen (/Users/a122/Documents/Platforms/c2d_test/samplecode/babykylin_scmj-master/server/node_modules/express/lib/application.js:617:24)
+    at Object.exports.start (/Users/a122/Documents/Platforms/c2d_test/samplecode/babykylin_scmj-master/server/account_server/account_server.js:20:6)
+    at Object.<anonymous> (/Users/a122/Documents/Platforms/c2d_test/samplecode/babykylin_scmj-master/server/account_server/app.js:11:4)
+    at Module._compile (module.js:409:26)
+    at Object.Module._extensions..js (module.js:416:10)
+events.js:141
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::9001
+    at Object.exports._errnoException (util.js:911:11)
+    at exports._exceptionWithHostPort (util.js:934:20)
+    at Server._listen2 (net.js:1248:14)
+    at listen (net.js:1284:10)
+    at Server.listen (net.js:1380:5)
+    at EventEmitter.listen (/Users/a122/Documents/Platforms/c2d_test/samplecode/babykylin_scmj-master/server/node_modules/express/lib/application.js:617:24)
+    at Object.exports.start (/Users/a122/Documents/Platforms/c2d_test/samplecode/babykylin_scmj-master/server/hall_server/client_service.js:301:6)
+    at Object.<anonymous> (/Users/a122/Documents/Platforms/c2d_test/samplecode/babykylin_scmj-master/server/hall_server/app.js:10:16)
+    at Module._compile (module.js:409:26)
+    at Object.Module._extensions..js (module.js:416:10)
+game server is listening on localhost:9003
+game server is listening on 10000
+events.js:141
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::10000
+    at Object.exports._errnoException (util.js:911:11)
+    at exports._exceptionWithHostPort (util.js:934:20)
+    at Server._listen2 (net.js:1248:14)
+    at listen (net.js:1284:10)
+    at Server.listen (net.js:1380:5)
+    at Object.exports.start (/Users/a122/Documents/Platforms/c2d_test/samplecode/babykylin_scmj-master/server/game_server/socket_service.js:30:13)
+    at Object.<anonymous> (/Users/a122/Documents/Platforms/c2d_test/samplecode/babykylin_scmj-master/server/game_server/app.js:15:16)
+    at Module._compile (module.js:409:26)
+    at Object.Module._extensions..js (module.js:416:10)
+    at Module.load (module.js:343:32)
