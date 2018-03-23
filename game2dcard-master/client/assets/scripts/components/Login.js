@@ -62,6 +62,7 @@ cc.Class({
         
         cc.vv.audioMgr.playBGM("bgMain.mp3");
         
+        //WHat is _mima? 
         this._mima = ["A","A","B","B","A","B","A","B","A","A","A","B","B","B"];
         
         if(!cc.sys.isNative || cc.sys.os == cc.sys.OS_WINDOWS){
