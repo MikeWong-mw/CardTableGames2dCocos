@@ -1,4 +1,4 @@
-﻿var HALL_IP = "192.168.1.68";//如果非本机访问，这里要变
+﻿var HALL_IP = "192.168.1.139";//如果非本机访问，这里要变
 var HALL_CLIENT_PORT = 9001;
 var HALL_ROOM_PORT = 9002;
 

@@ -55,6 +55,7 @@ function initMgr(){
     //cc.vv.mjutil = new MJUtil();
     
     cc.args = urlParse();
+
 }
     
 
@@ -107,7 +108,7 @@ cc.Class({
     
     showSplash:function(callback){
         var self = this;
-        var SHOW_TIME = 3000;
+        var SHOW_TIME = 1000;
         var FADE_TIME = 500;
         this._splash = cc.find("Canvas/splash");
         if(true || cc.sys.os != cc.sys.OS_IOS || !cc.sys.isNative){
@@ -191,3 +192,4 @@ cc.Class({
         this.label.string += content + '\n';
     },
 });
+

@@ -1,6 +1,6 @@
 
 //var URL = "http://127.0.0.1:9000";
-var URL = "http://192.168.1.68:9000";
+var URL = "http://192.168.1.139:9000";
 
 
 exports.master_url = null;
@@ -28,6 +28,7 @@ function sendRequest(path, data, handler, extraUrl) {
     }
     if (exports.token) {
         data.token = exports.token;
+        cc.log('data.token: ' + data.token);
     }
 
     if (extraUrl == null) {
@@ -72,7 +73,10 @@ function sendRequest(path, data, handler, extraUrl) {
         if (xhr.readyState === 4 && (xhr.status >= 200 && xhr.status < 300)) {
             // console.log("http res(" + xhr.responseText.length + "):" + xhr.responseText);
             cc.log("request from [" + xhr.responseURL + "] data [", ret, "]");
+
+
             var respText = xhr.responseText;
+            cc.log("xhr.responseText: " + xhr.responseText);
 
             var ret = null;
             try {

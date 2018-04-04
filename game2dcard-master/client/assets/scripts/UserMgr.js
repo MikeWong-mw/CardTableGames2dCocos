@@ -17,7 +17,12 @@ cc.Class({
     },
     
     guestAuth:function(){
+
+        //cc.args is initialized at class AppStart.  There is no default account.
+        //Account is always null
         var account = cc.args["account"];
+
+
         if(account == null){
             account = cc.sys.localStorage.getItem("account");
         }
@@ -39,12 +44,16 @@ cc.Class({
             self.account = ret.account;
             self.sign = ret.sign;
             cc.vv.http.url = "http://" + cc.vv.SI.hall;
+            cc.log('cc.vv.http.url = "http://" + cc.vv.SI.hall: ' + cc.vv.http.url);
             self.login();
         }   
     },
     
     login:function(){
         var self = this;
+
+        //This function is a callback function for cc.vv.http.sendRequest
+        //which is called below
         var onLogin = function(ret){
             if(ret.errcode !== 0){
                 console.log(ret.errmsg);
